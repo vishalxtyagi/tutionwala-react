@@ -32,4 +32,8 @@ iframe:hover {
         width: 100%;
         text-align: start;
     }
+
+    iframe {
+        width: 100%;
+    }
 }
