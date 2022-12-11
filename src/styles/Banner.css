@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;800&family=Poppins:wght@300;500&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.banner__image{
+  background-image: url('../assets/banner.png');
+  height: 110vh;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 120px;  
+}
+
+.video__box{
+  margin: auto;
+  width: 80%;
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 37px;
+  margin-bottom: 200px;
+}
+
+.video__section{
+  padding: 0;
+  width: 50%;
+  height: 520px;
+}
+
+.video__title{
+  font-size: 45px;
+  background-color: #FE6C00;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  font-weight: 700;
+}
+
+.videos__python{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+
+.videos__datar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+.videos__datapython{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 10px;
+}
+
+.logo__section{
+  background-image: url('../assets/3d2.png');
+  height: 400px;
+  width: 600px;
+  padding: 0;
+  object-fit: cover;
+  animation: imgUp 0.7s linear infinite alternate;
+}
+
+@keyframes imgUp{
+  to{
+    transform: translateY(-10px);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .banner__image{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding: 170px;
+  }
+
+  .video__box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .video__section{
+    width: 100;
+    margin: auto;
+    min-height: 755px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .banner__image{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding: 280px;
+  }
+
+  .video__box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .video__section{
+    width: 100;
+    margin: auto;
+    min-height: 755px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .banner__image{
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    padding: 280px;
+  }
+
+  .video__box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .video__section{
+    width: 100;
+    margin: auto;
+    min-height: 755px;
+  }
+}
+

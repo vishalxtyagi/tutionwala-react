@@ -1,0 +1,35 @@
+.title {
+  margin-bottom: 40px;
+  margin-left: 40%;
+  width: 100%;
+  font-size: 60px;
+  font-family: "Poppins";
+  max-width: 100%;
+  font-weight: 700;
+}
+
+iframe {
+    padding: 0 20px;
+    margin: 40px 0; 
+}
+
+iframe:hover {
+    transform: scale(1.05);
+    transition: ease-in 350ms;
+}
+
+@media only screen and (max-width: 600px){
+    .title{
+        margin: 40px 110px;
+        width: 100%;
+        text-align: start;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .title{
+        margin: 40px 230px;
+        width: 100%;
+        text-align: start;
+    }
+}

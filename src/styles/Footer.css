@@ -1,0 +1,47 @@
+.footer{
+    width:fit-content;
+    padding-left: 50%;
+    background-color: #7FBEF8;
+}
+
+.footer__content{
+    text-align: center;
+}
+
+.footer__container{
+    background-color: #7FBEF8;
+    width: auto;
+    padding: auto;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.footer__links{
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .footer__links{
+        width: 100%;
+        padding-left: 0%;
+        margin-left: 0;
+    }
+
+    .footer{
+        width: 100%;
+        padding-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .footer__links{
+        width: 100%;
+        padding-left: 0%;
+        margin-left: 0;
+    }
+
+    .footer{
+        width: 100%;
+        padding-left: 40%;
+    }
+}
