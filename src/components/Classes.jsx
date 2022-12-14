@@ -4,8 +4,10 @@ import "../styles/Classes.css";
 const Classes = () => {
   return (
     <div className="class__panel">
-      <h1 className="class__title">Live classes</h1>
+      <h1 className="class__title">
+        Live classes
       <div className="stream__icon"></div>
+      </h1>
       <div className="panel__container">
         <div className="card__c card">
           <div className="c"></div>

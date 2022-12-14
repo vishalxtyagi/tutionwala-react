@@ -25,13 +25,12 @@
   flex-direction: row;
   justify-content: space-around;
   font-size: 37px;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
 .video__section{
   padding: 0;
   width: 50%;
-  height: 520px;
 }
 
 .video__title{

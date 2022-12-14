@@ -1,36 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;800&family=Poppins:wght@300;500&display=swap");
 
 .class__panel {
-  height: 606px;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
   flex-direction: row;
   overflow-wrap: break-word;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
 }
 
-.stream__icon {
-  background-image: url("../assets/icons8-youtube-live-96\ 1.png");
-  width: 30%;
-  margin-left: 60px;
+.stream__icon::after {
+  content: url("../assets/icons8-youtube-live-96\ 1.png");
   font-size: 80px;
-  margin-top: 312px;
   text-align: center;
   background-repeat: no-repeat;
 }
 
 .class__title {
-  width: 30%;
   margin-left: 60px;
   font-size: 80px;
   font-family: "Poppins";
-  padding-top: 173px;
   text-align: center;
 }
 
 .panel__container {
   min-height: 600px;
-  width: 70%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -39,6 +36,7 @@
   background-image: url("../assets/icons8-python-48\ 1.png");
   height: 70px;
   width: 70px;
+  margin: auto;
   object-fit: scale-down;
   background-repeat: no-repeat;
 }
@@ -47,6 +45,7 @@
   background-image: url("../assets/dsa.png");
   height: 70px;
   width: 70px;
+  margin: auto;
   background-repeat: no-repeat;
   object-fit: fill;
 }
@@ -55,6 +54,7 @@
   background-image: url("../assets/icons8-c++-48\ 1.png");
   height: 70px;
   width: 70px;
+  margin: auto;
   background-repeat: no-repeat;
 }
 
@@ -62,6 +62,7 @@
   background-image: url("../assets/icons8-c-programming-48\ 1.png");
   height: 70px;
   width: 70px;
+  margin: auto;
   background-repeat: no-repeat;
   overflow-y: hidden;
 }
@@ -70,6 +71,7 @@
   background-image: url("../assets/icons8-java-48\ 1.png");
   height: 80px;
   width: 80px;
+  margin: auto;
   background-repeat: no-repeat;
 }
 
@@ -77,13 +79,13 @@
   background-image: url("../assets/icons8-r-project-48\ 1.png");
   height: 70px;
   max-width: 70px;
+  margin: auto;
   background-repeat: no-repeat;
 }
 
 .card {
-  max-width: 210px;
-  margin: 29px;
-  padding: 50px 20px;
+  margin: 30px 20px;
+  padding: 50px 0px;
   background-repeat: no-repeat;
   font-family: "Poppins";
   text-align: center;
@@ -105,7 +107,6 @@
 @media only screen and (max-width: 600px) {
   .class__panel {
     display: flex;
-    height: 828px;
     padding: 0;
     flex-direction: column;
     width: 100%;
@@ -118,23 +119,17 @@
     padding: 0;
   }
 
-  .stream__icon {
+  .stream__icon::after {
     min-height: 100px;
     margin-top: 20px;
-    width: 100%;
-    margin-left: 45%;
     padding: 0;
   }
 
-  .panel__container {
-    width: 100%;
-  }
 }
 
 @media only screen and (max-width: 900px) {
   .class__panel {
     display: flex;
-    height: 828px;
     padding: 0;
     flex-direction: column;
     width: 100%;
@@ -147,23 +142,21 @@
     padding: 0;
   }
 
-  .stream__icon {
+  .stream__icon::after {
     min-height: 100px;
     margin-top: 20px;
-    width: 100%;
-    margin-left: 45%;
     padding: 0;
   }
 
   .panel__container {
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 1200px) {
   .class__panel {
     display: flex;
-    height: 828px;
     padding: 0;
     flex-direction: column;
     width: 100%;
@@ -176,11 +169,9 @@
     padding: 0;
   }
 
-  .stream__icon {
+  .stream__icon::after {
     min-height: 100px;
     margin-top: 20px;
-    width: 100%;
-    margin-left: 45%;
     padding: 0;
   }
 
@@ -190,7 +181,4 @@
     margin-left: 10%;
   }
 
-  .panel__container {
-    width: 100%;
-  }
 }

@@ -10,7 +10,6 @@
 }
 
 .about__image {
-  height: 500px;
   width: 500px;
   border-radius: 50%;
   object-fit: contain;
@@ -246,7 +245,6 @@ input {
 
   .about__image {
     width: 100%;
-    height: 400px;
     width: 400px;
     margin: 0 100px;
     border-radius: 0;
@@ -257,7 +255,6 @@ input {
     margin-right: 0;
     padding-right: 0;
     margin-top: 70px;
-    height: 400px;
     margin-bottom: 50px;
   }
 

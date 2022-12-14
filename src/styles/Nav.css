@@ -6,15 +6,24 @@
 }
 
 .nav__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__items {
   width: 100%;
   height: 120px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
   height: 80px;
+  flex: 1 1;
 }
 
-.nav__container a {
+.nav__items a {
   float: left;
   padding: 12px;
   padding-top: 20px;
@@ -24,11 +33,10 @@
   text-decoration: none;
   font-family: "Poppins";
   font-size: 17px;
-  width: 20%;
   text-align: center;
 }
 
-.nav__container::-webkit-scrollbar {
+.nav__items::-webkit-scrollbar {
   display: none;
 }
 
@@ -40,7 +48,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .nav__container {
+  .nav__items {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -53,7 +61,7 @@
     width: 30%;
   }
 
-  .nav__container a {
+  .nav__items a {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -63,20 +71,22 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .nav__container {
+  .nav__items {
     display: flex;
     flex-direction: column;
     height: auto;
     font-size: 5px;
+    order: 2;
   }
 
   img.nav__logo {
     margin-left: 10px;
     padding-left: 10px;
     width: 30%;
+    order: 1;
   }
 
-  .nav__container a {
+  .nav__items a {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -86,20 +96,21 @@
 }
 
 @media only screen and (max-width: 1200px){
-  .nav__container {
+  .nav__items {
     display: flex;
-    flex-direction: column;
     height: auto;
     font-size: 5px;
+    order: 2;
   }
 
   img.nav__logo {
     margin-left: 10px;
     padding-left: 10px;
-    width: 30%;
+    width: 20%;
+    order: 1;
   }
 
-  .nav__container a {
+  .nav__items a {
     margin: 0;
     padding: 0;
     width: 100%;
